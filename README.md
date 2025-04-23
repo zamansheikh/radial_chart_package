@@ -4,7 +4,7 @@ A reusable, interactive radial chart widget for Flutter. Supports dynamic thickn
 
 ## 📸 Preview
 
-![chart preview](https://your-link-to-a-gif-or-image)
+![chart preview](repo_files/demo.png)
 
 ## 🚀 Features
 
