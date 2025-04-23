@@ -1,4 +1,4 @@
-## [0.0.1] - 2025-04-23
+## 0.0.1
 
 - Initial release 🚀
 - Added interactive radial chart with:
