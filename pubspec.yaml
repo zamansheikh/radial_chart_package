@@ -1,0 +1,20 @@
+name: radial_chart_package
+description: A customizable, interactive radial chart widget for Flutter.
+version: 0.0.1
+homepage: https://github.com/zamansheikh/radial_chart_package
+repository: https://github.com/zamansheikh/radial_chart_package
+issue_tracker: https://github.com/zamansheikh/radial_chart_package/issues
+environment:
+  sdk: ">=2.17.0 <4.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^5.0.0
+
+flutter:
+  uses-material-design: true
