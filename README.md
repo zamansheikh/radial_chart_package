@@ -3,8 +3,7 @@
 A reusable, interactive radial chart widget for Flutter. Supports dynamic thickness, animated selection, and custom labels.
 
 ## 📸 Preview
-
-![chart preview](repo_files/demo.png){  height=600px }
+<img src="repo_files/demo.png" width="40%" />
 
 ## 🚀 Features
 
