@@ -50,8 +50,6 @@ RadialPerformanceChart(
   ),
 ```
 
-
-
 ## 📦 Installation
 Add the following to your `pubspec.yaml` file:
 
@@ -62,4 +60,17 @@ dependencies:
 
 Then, run `flutter pub get` to install the package.
 
+## 🔗 GitHub Repository
+Find the source code and contribute to the project here: [Radial Chart Package Repository](https://github.com/zamansheikh/radial_chart_package)
 
+## 🤝 Contributing
+
+Contributions are welcome! If you'd like to improve this package, please follow these steps:
+
+1. Fork the repository.
+2. Create a new branch for your feature or bug fix.
+3. Make your changes and commit them with clear messages.
+4. Push your branch to your forked repository.
+5. Open a pull request to the main branch of this repository.
+
+Please ensure your code follows the existing style and includes tests where applicable. For major changes, consider opening an issue first to discuss your ideas.
