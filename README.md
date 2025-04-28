@@ -23,3 +23,43 @@ RadialPerformanceChart(
     // ...
   ],
 )
+```
+- `radius`: The radius of the chart.
+- `segments`: A list of `SegmentData` objects, each representing a segment of the chart.
+- `percentage`: The percentage of the segment (0-100).
+- `label`: The label for the segment (optional).
+- `gapPercentage`: The gap between segments (0-0.20).
+- `centerCircleRadius`: The radius of the center circle (0-1).
+- `backgroundColor`: The background color of the chart.
+- `segmentHeight`: The height of the segments.
+
+```dart
+ RadialPerformanceChart(
+    backgroundColor: Colors.black,
+    centerCircleRadius: 0.30,
+    gapPercentage: 0.005,
+    segmentHeight: 1.5,
+    radius: 150,
+    segments: [
+      SegmentData(percentage: 72, color: Colors.blue, label: "blue"),
+      SegmentData(percentage: 100, color: Colors.amber, label: "amber"),
+      SegmentData(percentage: 65, color: Colors.red, label: "red"),
+      SegmentData(percentage: 50, color: Colors.green, label: "green"),
+      // Add more segments as needed
+    ],
+  ),
+```
+
+
+
+## 📦 Installation
+Add the following to your `pubspec.yaml` file:
+
+```yaml
+dependencies:
+  radial_chart_package: latest
+```
+
+Then, run `flutter pub get` to install the package.
+
+

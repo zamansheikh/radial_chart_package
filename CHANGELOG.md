@@ -1,3 +1,9 @@
+## 0.0.3
+
+- Add preview gif
+- Update doccumentation
+- Fix github issue links
+
 ## 0.0.2
 
 - Update expample image

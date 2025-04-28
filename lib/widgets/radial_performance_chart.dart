@@ -2,14 +2,29 @@ import 'dart:math';
 import 'package:flutter/material.dart';
 import 'segment_data.dart';
 
+/// A widget that displays a radial performance chart with customizable segments.
 class RadialPerformanceChart extends StatefulWidget {
+/// The radius of the entire chart.
   final double radius;
+
+  /// The list of segments to display in the chart.
   final List<SegmentData> segments;
+
+  /// The radius of the center circle, as a fraction of the chart's radius.
   final double centerCircleRadius;
+
+  /// The percentage of the chart's circumference used as a gap between segments.
   final double gapPercentage;
+
+  /// The height of each segment, affecting the chart's thickness.
   final double segmentHeight;
+
+  /// The background color of the chart's container.
   final Color backgroundColor;
 
+  /// Creates a [RadialPerformanceChart] with the specified properties.
+  ///
+  /// The [radius] and [segments] are required, while other properties have default values.
   const RadialPerformanceChart({
     super.key,
     required this.radius,
@@ -24,6 +39,7 @@ class RadialPerformanceChart extends StatefulWidget {
   State<RadialPerformanceChart> createState() => _RadialPerformanceChartState();
 }
 
+/// The state for [RadialPerformanceChart], managing animations and interactions.
 class _RadialPerformanceChartState extends State<RadialPerformanceChart>
     with SingleTickerProviderStateMixin {
   int? selectedIndex;
@@ -104,12 +120,24 @@ class _RadialPerformanceChartState extends State<RadialPerformanceChart>
   }
 }
 
+/// A custom painter that draws the radial chart's segments.
 class _RadialChartPainter extends CustomPainter {
+  /// The list of segments to draw.
   final List<SegmentData> segments;
+
+  /// The radius of the center circle, as a fraction of the chart's radius.
   final double centerCircleRadius;
+
+  /// The percentage of the chart's circumference used as a gap between segments.
   final double gapPercentage;
+
+  /// The height of each segment, affecting the chart's thickness.
   final double segmentHeight;
+
+  /// The current value of the animation, used for segment highlighting.
   final double animationValue;
+
+  /// The index of the currently selected segment, if any.
   final int? selectedIndex;
 
   _RadialChartPainter({
