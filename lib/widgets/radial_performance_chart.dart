@@ -4,7 +4,7 @@ import 'segment_data.dart';
 
 /// A widget that displays a radial performance chart with customizable segments.
 class RadialPerformanceChart extends StatefulWidget {
-/// The radius of the entire chart.
+  /// The radius of the entire chart.
   final double radius;
 
   /// The list of segments to display in the chart.
@@ -96,17 +96,16 @@ class _RadialPerformanceChartState extends State<RadialPerformanceChart>
           },
           child: AnimatedBuilder(
             animation: _controller,
-            builder:
-                (_, __) => CustomPaint(
-                  painter: _RadialChartPainter(
-                    segments: widget.segments,
-                    centerCircleRadius: widget.centerCircleRadius,
-                    gapPercentage: widget.gapPercentage,
-                    segmentHeight: widget.segmentHeight,
-                    animationValue: _controller.value,
-                    selectedIndex: selectedIndex,
-                  ),
-                ),
+            builder: (_, __) => CustomPaint(
+              painter: _RadialChartPainter(
+                segments: widget.segments,
+                centerCircleRadius: widget.centerCircleRadius,
+                gapPercentage: widget.gapPercentage,
+                segmentHeight: widget.segmentHeight,
+                animationValue: _controller.value,
+                selectedIndex: selectedIndex,
+              ),
+            ),
           ),
         ),
       ),
@@ -182,12 +181,11 @@ class _RadialChartPainter extends CustomPainter {
       final radius = (innerRadius + outerRadius) / 2;
       final rect = Rect.fromCircle(center: center, radius: radius);
 
-      final paint =
-          Paint()
-            ..color = segment.color
-            ..style = PaintingStyle.stroke
-            ..strokeWidth = thickness
-            ..strokeCap = StrokeCap.butt;
+      final paint = Paint()
+        ..color = segment.color
+        ..style = PaintingStyle.stroke
+        ..strokeWidth = thickness
+        ..strokeCap = StrokeCap.butt;
 
       canvas.drawArc(rect, startAngle, sweepAngle, false, paint);
 

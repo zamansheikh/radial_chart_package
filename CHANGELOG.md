@@ -1,3 +1,7 @@
+## 0.0.4
+
+- Fix dart formatting
+
 ## 0.0.3
 
 - Add preview gif
